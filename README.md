@@ -27,7 +27,7 @@ platforms.
 Installing
 ----------
 
-Precompiled packages are available for PowerPC 64 Big Endian on our Repository page
+Precompiled packages are available for PowerPC 64 Big Endian on our Repository 
 [Releases page](https://repo.powerprogress.org/debian/buildpak/freecad-18/).
 
 Building for PowerPC64 be - Debian sid
