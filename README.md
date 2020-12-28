@@ -20,9 +20,6 @@ platforms.
 
 - [Home page](http://www.freecadweb.org)
 - [Documentation wiki](http://www.freecadweb.org/wiki/)
-- [Forum](http://forum.freecadweb.org/)
-- [Bug tracker](http://www.freecadweb.org/tracker/)
-- [Git repository](https://github.com/FreeCAD/FreeCAD)
 
 Installing
 ----------
@@ -36,7 +33,8 @@ Building for PowerPC64 be - Debian sid
 Compiling FreeCAD requires installation of several libraries and their 
 development files such as OpenCASCADe, Coin and Qt, listed in the 
 pages below. Once this is done, FreeCAD can be simply compiled with 
-cMake. Please note that not all develepment libraries are available on debian repository.
+cMake. 
+**Please note that not all develepment libraries are available on debian repository.
 
 Usage & Getting help
 --------------------
