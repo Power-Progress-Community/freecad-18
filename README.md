@@ -34,7 +34,56 @@ Compiling FreeCAD requires installation of several libraries and their
 development files such as OpenCASCADe, Coin and Qt, listed in the 
 pages below. Once this is done, FreeCAD can be simply compiled with 
 cMake. 
-**Please note that not all develepment libraries are available on debian repository.
+
+**Please note that not all develepment libraries are available on Debian repository **
+
+the following deps are necessary to build :
++ cmake 
++ build-essential 
++ libtool 
++ lsb-release 
++ swig 
++ libboost-dev 
++ libboost-date-time-dev 
++ libboost-filesystem-dev 
++ libboost-graph-dev 
++ libboost-iostreams-dev 
++ libboost-program-options-dev 
++ libboost-python-dev 
++ libboost-regex-dev 
++ libboost-serialization-dev 
++ libboost-thread-dev 
++ libcoin-dev 
++ libeigen3-dev 
++ libgts-bin 
++ libgts-dev 
++ libkdtree++-dev 
++ libmedc-dev 
++ libopencv-dev 
++ libproj-dev 
++ libvtk6-dev 
++ libx11-dev 
++ libxerces-c-dev 
++ libzipios++-dev 
++ qt4-dev-tools 
++ libqt4-dev 
++ libqt4-opengl-dev 
++ libqtwebkit-dev 
++ libshiboken-dev 
++ libpyside-dev 
++ pyside-tools 
++ python-dev 
++ python-matplotlib 
++ python-ply 
++ python-pyside 
++ libocct*-dev 
++ occt-draw 
++ libsimage-dev 
++ doxygen 
++ libcoin-doc 
++ dh-exec 
++ libspnav-dev 
+
 
 Usage & Getting help
 --------------------
