@@ -27,7 +27,7 @@ Installing
 Precompiled packages with Altivec optimizations are available for PowerPC 64 Big Endian on our Repository 
 [Releases page](https://repo.powerprogress.org/debian/buildpak/freecad-18/).
 
-Building for PowerPC64 be - Debian sid
+Building
 ---------
 
 Compiling FreeCAD requires installation of several libraries and their 
@@ -93,3 +93,12 @@ Usage & Getting help
 --------------------
 
 For usage of FREECAD please refeer to Freecad main site [FreeCAD](https://www.freecadweb.org/)
+
+Notes
+-----
+Locate the FreeCAD executable file (usually in /usr/lib/FreeCAD/bin)<br>
+Execute the command 'ldd FreeCAD' from the terminal<br>
+Write down the version of the libCoin.so library that FreeCAD is using (e.g. libCoin.so.60)<br>
+Locate the libSoQt.so library (usually in /usr/lib)<br>
+Execute 'ldd libSoQt.so' and check if it refers to the same version of Coin that FreeCAD refers to
+If there are any differences, FreeCAD or SoQt must be recompiled. Best to recompile the one that uses the older version of Coin. It is best to try to contact the people responsible for packaging SoQt or FreeCAD and politely ask them to consider recompiling. If you want to undertake this task yourself, and you can't recompile SoQt because it will damage other applications on your system, you can force FreeCAD to compile with the required Coin version via ./configure --with-coin=DIR. But you have to make sure that the correct package of this Coin version is installed.
