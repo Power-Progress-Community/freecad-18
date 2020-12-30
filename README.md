@@ -24,7 +24,7 @@ platforms.
 Installing
 ----------
 
-Precompiled packages are available for PowerPC 64 Big Endian on our Repository 
+Precompiled packages with Altivec optimizations are available for PowerPC 64 Big Endian on our Repository 
 [Releases page](https://repo.powerprogress.org/debian/buildpak/freecad-18/).
 
 Building for PowerPC64 be - Debian sid
@@ -84,12 +84,12 @@ the following deps are necessary to build :
 + dh-exec 
 + libspnav-dev 
 
-to build first clone this repository then 
-mkdir freecad-build
-CXXFLAGS="-g0 -mcpu=powerpc64 -maltivec -mabi=altivec -fno-strict-aliasing -O3 -pipe" cmake -DFREECAD_BUILD_DEBIAN=ON -DCMAKE_BUILD_TYPE=Release -DBUILD_QT5=OFF -DPYTHON_EXECUTABLE=/usr/bin/python2.7 -DPYTHON_INCLUDE_DIR=/usr/include/python2.7 -DPYTHON_LIBRARY=/usr/lib/powerpc64-linux-gnu/libpython2.7.so -DPYTHON_PACKAGES_PATH=/usr/local/lib/python2.7/dist-packages/ --with-boost-libdir=/usr/local/include/boost/ ../freecad-source
-
+to build first clone this repository then<br> 
+mkdir freecad-build<br>
+cmake -DCMAKE_BUILD_TYPE=Release -DBUILD_QT5=OFF -DPYTHON_EXECUTABLE=/usr/bin/python2.7 -DPYTHON_INCLUDE_DIR=/usr/include/python2.7 -DPYTHON_LIBRARY=/usr/lib/powerpc64-linux-gnu/libpython2.7.so -DPYTHON_PACKAGES_PATH=/usr/local/lib/python2.7/dist-packages/ --with-boost-libdir=/usr/local/include/boost/ ../freecad-18
+make -j2<br>
 
 Usage & Getting help
 --------------------
 
-For usage of FREECAD please refeer to Freecad 
+For usage of FREECAD please refeer to Freecad main site [FreeCAD](https://www.freecadweb.org/)
